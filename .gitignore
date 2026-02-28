@@ -1,0 +1,17 @@
+# Local .terraform folder (cache de proveedores y módulos)
+**/.terraform/*
+
+# Archivos de estado (contienen información sensible y secretos en texto plano)
+*.tfstate
+*.tfstate.*
+
+# Archivos de variables con secretos (nunca los subas)
+*.tfvars
+*.tfvars.json
+
+# Archivos de configuración local de variables
+override.tf
+override.tf.json
+
+# Archivos de log
+crash.log
