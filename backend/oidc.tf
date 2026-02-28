@@ -21,7 +21,7 @@ resource "aws_iam_role" "github_actions_role" {
         Condition = {
           StringLike = {
             # SUSTITUYE: "auribem84/infra-terraform-template:*" por los tuyos
-            "token.actions.githubusercontent.com:sub" = "repo:TU_USUARIO/TU_REPOSITORIO:*"
+            "token.actions.githubusercontent.com:sub" = "repo:auribem84/infra-terraform-template:*"
           }
         }
       }
