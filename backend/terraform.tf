@@ -7,9 +7,9 @@ resource "aws_s3_bucket" "terraform_state" {
   bucket        = "my-tf-state-template" # Change this to a unique name
   force_destroy = false
 
-  lifecycle {
-    prevent_destroy = true
-  }
+#  lifecycle {
+#    prevent_destroy = true
+#  }
 }
 
 # Enable versioning (Crucial for recovering from accidental deletes)
